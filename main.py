@@ -15,6 +15,7 @@ except Exception:
     print(Exception)
 
 nbStd = int(input("Entrez le nombre d'étudiant: "))
+p=math.log(nbStd)/nbStd
 students = []
 
 
@@ -125,7 +126,7 @@ def is_connex(n, student_list):
 
 
 def init(
-    students, n, p=(math.log(nbStd) / nbStd), nb_interaction=50, limit_interaction=False
+    students, n, p=p, nb_interaction=50, limit_interaction=False
 ):
     with driver.session(database="neo4j") as session:
         while 1:
