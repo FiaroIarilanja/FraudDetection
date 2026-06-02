@@ -454,7 +454,7 @@ def inspect():
         for i in suspect:
             index = int(i[1]) - 1
             community_degree = []
-            print(f"Dans Communauté C{index}")
+            print(f"Dans Communauté C{index+1}")
             for person in communautes[index]:
                 community_degree.append(get_degree(person))
             fournisseur = sum(
