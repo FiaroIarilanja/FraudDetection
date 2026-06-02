@@ -14,7 +14,7 @@ try:
 except Exception:
     print(Exception)
 
-nbStd = 100
+nbStd = int(input("Entrez le nombre d'étudiant: "))
 students = []
 
 
