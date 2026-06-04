@@ -7,9 +7,9 @@ from neo4j import GraphDatabase
 USER = "neo4j"
 SERVER = "neo4j://localhost:7687"
 PASSWORD = "awkwardfellow@detection"
-driver = GraphDatabase.driver(SERVER, auth=(USER, PASSWORD))
 
 try:
+    driver = GraphDatabase.driver(SERVER, auth=(USER, PASSWORD))
     print("Connected")
 except Exception:
     print(Exception)
